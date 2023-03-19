@@ -10,7 +10,7 @@ const Home = () => {
   const [cityName, setCityName] = useState("");
 
   const fetchData = async () => {
-    const result = await axios.get(`http://localhost:5000/api/${cityName}`);
+    const result = await axios.get(`https://weather-mod.onrender.com/api/${cityName}`);
     setData(result.data);
   };
 
