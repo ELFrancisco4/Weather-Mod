@@ -1,0 +1,60 @@
+@import '../../../styles/config/config';
+
+
+.metrics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 60px;
+    }
+    &__data{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.temperature{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    svg{
+        fill: orangered;
+    }
+}
+
+
+
+.forecast{
+    border-radius: 10px;
+    opacity: .8;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(45deg, $primary-color, $secondary-color);
+    svg{
+        fill: orange;
+    }
+    span{
+        font-weight: bold;
+    }
+}
+
+.search_field {
+    width: 500px;
+    height: 40px;
+    background: linear-gradient(to left, $primary-color, $secondary-color);
+    color: #fff;
+    font-weight: bold;
+    padding: .3em;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+}
+
